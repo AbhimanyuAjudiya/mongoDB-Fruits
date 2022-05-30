@@ -59,3 +59,56 @@ const findDocuments = function(db, callback) {
     callback(fruits);
   });
 }
+
+// For mongoose
+
+// const mongoose = require('mongoose');
+ 
+// main().catch(err => console.log(err));
+ 
+// async function main() {
+//   await mongoose.connect('mongodb://localhost:27017/fruitsDB');
+// }
+ 
+// const fruitSchema = new mongoose.Schema ({
+// 	name: String,
+// 	rating: Number,
+// 	review: String
+// })
+ 
+// const Fruit = new mongoose.model ("Fruit", fruitSchema)
+ 
+// const kivi = new Fruit ({
+// 	name: "Kivi",
+// 	rating: 10,
+// 	review: "Best fruit!"
+// })
+// const orange = new Fruit ({
+// 	name: "Orange",
+// 	rating: 4,
+// 	review: "Too sour for me"
+// })
+// const banana = new Fruit ({
+// 	name: "Banana",
+// 	rating: 3,
+// 	review: "Not bad"
+// })
+ 
+// Fruit.insertMany([kivi, orange, banana], function(err){
+// 	if (err) {
+// 		console.log(err);
+// 	} else {
+// 		console.log("Done!!");
+// 	}
+// });
+
+// Fruit.find(function(err,fruits){
+// 	if (err) {
+// 		console.log(err);
+// 	} else {
+// 		mongoose.connection.close(); 
+// 		fruits.forEach(fruit => {
+// 			console.log(fruit.name);
+// 		});
+// 	}
+// })
