@@ -102,7 +102,7 @@ const findDocuments = function(db, callback) {
 // 	if (err) {
 // 		console.log(err);
 // 	} else {
-// 		mongoose.connection.close(); 
+// 		mongoose.connection.close(); // forEach is used as for loop 
 // 		fruits.forEach(fruit => {
 // 			console.log(fruit.name);
 // 		});
